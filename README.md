@@ -8,3 +8,8 @@ PushBack - inserts new element to the end of the linkedlist
 PushFront - inserts new element to the front of the linkedlist
 IsEmpty - return whether the linkedlist is empty or not
  </p>
+
+ <p>
+    How to initialize the LinkedList:
+        list := LinkedList{}
+ </p>
