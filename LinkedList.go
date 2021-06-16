@@ -17,7 +17,7 @@ type LinkedList struct {
 	size int
 }
 
-func (list *LinkedList) insert(x interface{}) {
+func (list *LinkedList) Insert(x interface{}) {
 	ptr := &ListNode{data : x}
 	if list.head == nil {
 		list.head, list.tail = ptr, ptr
@@ -29,7 +29,7 @@ func (list *LinkedList) insert(x interface{}) {
 	list.size++
 }
 
-func (list *LinkedList) get(index int) interface{}{
+func (list *LinkedList) Get(index int) interface{}{
 	place := 0
 	curr := list.head
 	if curr == nil{
@@ -84,7 +84,7 @@ func (list *LinkedList) PopFront() interface{}{
 	return nil
 }
 
-func (list *LinkedList) pushBack(x interface{}) {
+func (list *LinkedList) PushBack(x interface{}) {
 	ptr := &ListNode{data : x}
 	if list.head == nil {
 		list.head, list.tail = ptr, ptr
@@ -96,7 +96,7 @@ func (list *LinkedList) pushBack(x interface{}) {
 	list.size++
 }
 
-func (list *LinkedList) pushFront(x interface{}) {
+func (list *LinkedList) PushFront(x interface{}) {
 	ptr := &ListNode{data : x}
 	if list.head == nil {
 		list.head, list.tail = ptr, ptr
@@ -108,7 +108,7 @@ func (list *LinkedList) pushFront(x interface{}) {
 	list.size++
 }
 
-func (list *LinkedList) isEmpty() bool{
+func (list *LinkedList) IsEmpty() bool{
 	if list.size == 0 {
 		return true
 	} else { 
