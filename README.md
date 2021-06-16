@@ -10,6 +10,6 @@ IsEmpty - return whether the linkedlist is empty or not
  </p>
 
  <p>
-    How to initialize the LinkedList:
-        list := LinkedList{}
+    How to initialize the LinkedList: <br>
+       <t> list := LinkedList{}
  </p>
