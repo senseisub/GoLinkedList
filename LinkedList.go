@@ -118,8 +118,8 @@ func (list *LinkedList) IsEmpty() bool{
 
 func main() {
 	list := &LinkedList{}
-	list.insert(2);
-	list.insert(3);
-	list.insert(4);
-	fmt.Println(list.get(-1));
+	list.Insert(2);
+	list.Insert(3);
+	list.Insert(4);
+	fmt.Println(list.Get(-1));
 }
